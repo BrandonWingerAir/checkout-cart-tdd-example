@@ -1,0 +1,7 @@
+1. Create instance of Checkout class
+2. Add item price
+3. Add item
+4. Calculate total
+5. Add multiple items and calculate total
+6. Apply discount in total calculation
+7. Exception is thrown for an item added without a price
