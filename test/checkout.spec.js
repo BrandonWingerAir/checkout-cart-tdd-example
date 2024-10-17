@@ -6,3 +6,9 @@ it('Add item price', function(){
     var checkout = new Checkout();
     checkout.addItemPrice('a', 1);
 });
+
+it('Add item', function() {
+    var checkout = new Checkout();
+    checkout.addItemPrice('a', 1);
+    checkout.addItem('a');
+})
