@@ -1,5 +1,7 @@
+const Checkout = require('../checkout.js');
+
 var expect = require('chai').expect;
 
-it('Is True', function(){
-    expect(true).to.equal(true);
+it('Instantiate checkout', function(){
+    var checkout = new Checkout();
 });
