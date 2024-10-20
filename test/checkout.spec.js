@@ -20,3 +20,7 @@ it('Add multiple items in total', function(){
     checkout.addItem('b');
     expect(checkout.calculateTotal()).to.equal(3);
 });
+
+it('Can add discount rule', function(){
+    checkout.addDiscount('a', 3, 3);
+});

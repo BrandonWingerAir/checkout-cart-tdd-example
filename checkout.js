@@ -15,4 +15,8 @@ module.exports = class Checkout {
     calculateTotal() {
         return this.total;
     }
+
+    addDiscount(item, itemCount, discountPrice) {
+
+    }
 }

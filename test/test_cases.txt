@@ -3,5 +3,6 @@
 3. Add item
 4. Calculate total
 5. Add multiple items and calculate total
-6. Apply discount in total calculation
-7. Exception is thrown for an item added without a price
+6. Add discount rule
+7. Apply discounts in total calculation
+8. Exception is thrown for an item added without a price
