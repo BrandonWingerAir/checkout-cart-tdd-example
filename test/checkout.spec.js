@@ -33,3 +33,9 @@ it('Apply discounts in total', function(){
 
     expect(checkout.calculateTotal()).to.equal(2);
 });
+
+it('Throw exception if item added without price', function(){
+    expect(function(){
+        checkout.addItem('c')
+    }).to.throw();
+});

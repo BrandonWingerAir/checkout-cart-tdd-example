@@ -10,6 +10,10 @@ module.exports = class Checkout {
     }
 
     addItem(item) {
+        if (this.prices[item] == undefined) {
+            throw('No price data for item: ' + item)
+        }
+
         if (this.items[item] == undefined) {
             this.items[item] = 1;
         } else {
