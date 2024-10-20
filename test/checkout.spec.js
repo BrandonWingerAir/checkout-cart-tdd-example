@@ -20,6 +20,16 @@ it('Add multiple items in total', function(){
     expect(checkout.calculateTotal()).to.equal(3);
 });
 
-it('Can add discount rule', function(){
+it('Add discount rule', function(){
     checkout.addDiscount('a', 3, 3);
+});
+
+xit('Apply discounts in total', function(){
+    checkout.addDiscount('a', 3, 2);
+
+    checkout.addItem('a');
+    checkout.addItem('a');
+    checkout.addItem('a');
+
+    expect(checkout.calculateTotal()).to.equal(2);
 });
