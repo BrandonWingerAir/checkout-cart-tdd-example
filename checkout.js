@@ -21,7 +21,17 @@ module.exports = class Checkout {
         var total = 0;
 
         for (var item in this.items) {
-            total += (this.prices[item] * this.items[item]);
+            var discount = this.discounts[item];
+
+            if (discount != undefined) {
+                var numberofDiscounts = this.items[item] / discount.count;
+                total += numberofDiscounts * discount.price;
+
+                var remainder = this.items[item] % discount.count;
+                total += remainder * this.prices[item];
+            } else {
+                total += (this.prices[item] * this.items[item]);
+            }
         }
 
         return total;
